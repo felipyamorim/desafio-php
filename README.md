@@ -17,15 +17,15 @@ Após executar o comando, você poderá acessar a API através do seguinte ender
 
 #### Usuário
 
-* [Listar Usuários](user/list.md) : `GET /api/user`
-* [Criar Usuário](user/create.md) : `POST /api/user`
-* [Visualizar Usuário](user/show.md) : `GET /api/user/:id`
+* [Listar Usuários](documentation/user/list.md) : `GET /api/user`
+* [Criar Usuário](documentation/user/create.md) : `POST /api/user`
+* [Visualizar Usuário](documentation/user/show.md) : `GET /api/user/:id`
 
 #### Transferência
 
-* [Listar Transferência](user/list.md) : `GET /api/transfer`
-* [Criar Transferência](transfer/create.md) : `POST /api/transfer`
-* [Visualizar Transferência](transfer/show.md) : `POST /api/transfer`
+* [Listar Transferência](documentation/user/list.md) : `GET /api/transfer`
+* [Criar Transferência](documentation/transfer/create.md) : `POST /api/transfer`
+* [Visualizar Transferência](documentation/transfer/show.md) : `POST /api/transfer`
 
 ## Testes
 
