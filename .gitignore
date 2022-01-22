@@ -1,3 +1,5 @@
+.idea/
+reports/
 
 ###> symfony/framework-bundle ###
 /.env.local
@@ -8,3 +10,8 @@
 /var/
 /vendor/
 ###< symfony/framework-bundle ###
+
+###> symfony/phpunit-bridge ###
+.phpunit.result.cache
+/phpunit.xml
+###< symfony/phpunit-bridge ###

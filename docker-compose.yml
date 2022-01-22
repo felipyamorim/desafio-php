@@ -1,0 +1,34 @@
+version: '3.8'
+
+volumes:
+  desafio-database-data:
+    driver: local
+
+services:
+  api:
+    build:
+      context: .
+    container_name: desafio-api
+    volumes:
+      - .:/var/www/html
+    ports:
+      - "8080:80"
+    depends_on:
+      - database
+  database:
+    image: postgres:13-alpine
+    container_name: desafio-database
+    environment:
+      POSTGRES_DB: desafio
+      POSTGRES_PASSWORD: desafio
+      POSTGRES_USER: desafio
+    volumes:
+      - desafio-database-data:/var/lib/postgresql/data:rw
+    ports:
+      - "5432:5432"
+  redis:
+    image: redis
+    container_name: desafio-redis
+    command: redis-server
+    ports:
+      - "6379:6379"
