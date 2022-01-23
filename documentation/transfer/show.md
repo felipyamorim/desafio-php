@@ -17,17 +17,16 @@ Visualizar uma transferência cadastrada.
   "type": "success",
   "data": {
     "id": 1,
-    "name": "João Alves",
-    "document": "44872223039",
-    "email": "jalves@bestemail.com",
-    "type": "common",
-    "balance": "900.00",
+    "payer": 1,
+    "payee": 2,
+    "value": "100.00",
+    "status": "approved",
     "created_at": {
-      "date": "2022\/01\/22 16:28:55",
+      "date": "2022\/01\/22 17:14:26",
       "timezone": "America\/Sao_Paulo"
     },
     "updated_at": {
-      "date": "2022\/01\/22 17:14:26",
+      "date": "2022\/01\/22 17:14:30",
       "timezone": "America\/Sao_Paulo"
     }
   }

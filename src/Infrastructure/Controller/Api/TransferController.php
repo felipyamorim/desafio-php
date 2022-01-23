@@ -40,7 +40,7 @@ class TransferController extends AbstractApiController
     }
 
     #[Route('/transfer/{id}', name: 'transfer_show', methods: 'GET')]
-    public function show($id, UserRepository $transferRepository): Response
+    public function show($id, TransferRepository $transferRepository): Response
     {
         $transfer = $transferRepository->find($id);
 
