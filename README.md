@@ -7,6 +7,7 @@ Desafio desenvolvido para o processo seletivo referente a vaga de **Desenvolvedo
 Para executar esse projeto você precisará do docker e docker-compose instalados.
 
     docker-compose up -d
+    docker-compose exec api composer install
     docker-compose exec api php bin/console doctrine:migrations:migrate
 
 Após executar o comando, você poderá acessar a API através do seguinte endereço: http://localhost:8080
