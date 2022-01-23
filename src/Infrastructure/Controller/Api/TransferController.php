@@ -13,6 +13,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Routing\Annotation\Route;
 
+#[Route('/api')]
 class TransferController extends AbstractApiController
 {
     #[Route('/transfer', name: 'transfer', methods: 'GET')]
@@ -43,7 +44,7 @@ class TransferController extends AbstractApiController
     {
         $transfer = $transferRepository->find($id);
 
-        if( ! $transfer){
+        if (!$transfer) {
             throw new NotFoundHttpException('The transfer does not exist.');
         }
 

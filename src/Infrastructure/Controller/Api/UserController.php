@@ -12,6 +12,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Routing\Annotation\Route;
 
+#[Route('/api')]
 class UserController extends AbstractApiController
 {
     #[Route('/user', name: 'user', methods: 'GET')]
@@ -42,7 +43,7 @@ class UserController extends AbstractApiController
     {
         $user = $userRepository->find($id);
 
-        if( ! $user){
+        if (!$user) {
             throw new NotFoundHttpException('The user does not exist.');
         }
 
